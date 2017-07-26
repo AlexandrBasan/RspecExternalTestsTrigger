@@ -6,7 +6,7 @@ include RSpec::Expectations
 describe "Google Test Selenium Script" do
 
   before(:each) do
-    @driver = Selenium::WebDriver.for :remote, url: "http://0.0.0.0:32769/wd/hub", desired_capabilities: :chrome ### replaced
+    @driver = Selenium::WebDriver.for :remote, url: "http://ucb-selenium.azurewebsites.net:80/wd/hub", desired_capabilities: :chrome ### replaced
     @base_url = "https://www.google.co.nz/"
     @accept_next_alert = true
     @driver.manage.timeouts.implicit_wait = 30
